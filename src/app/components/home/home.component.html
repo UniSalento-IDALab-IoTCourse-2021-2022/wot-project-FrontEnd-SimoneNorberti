@@ -1,0 +1,19 @@
+
+<h2>Lista pazienti</h2>
+<ul>
+  <li *ngFor="let obj of pazienti" (click)="onObjectSelect(obj)">
+    {{ obj.ID }} {{ obj.nome }} {{ obj.cognome }}
+  </li>
+</ul>
+
+<div *ngIf="selectedPaziente">
+  <h2>Grafici andamento Sarcopenia</h2>
+  <canvas id="myChart1" width="400" height="200"></canvas>
+  <canvas id="myChart2" width="400" height="200"></canvas>
+  <canvas id="myChart3" width="400" height="200"></canvas>
+</div>
+<!--
+<div class="chart-container" *ngFor="let data of scatterData">
+  <canvas id="{{ data.id }}"></canvas>
+</div>
+-->
