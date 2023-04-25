@@ -11,11 +11,11 @@ export class PazienteService {
   constructor(private http: HttpClient) { }
 
   getPazienti(): Observable<Paziente[]> {
-    return this.http.get<Paziente[]>('http://127.0.0.1:5000/api/listapazienti');
+    return this.http.get<Paziente[]>('http://152.70.169.171:5000/api/listapazienti');
   }
 
   getPazienteByID(id: string | undefined): Observable<any>{
-    return this.http.get<any>("http://127.0.0.1:5000/api/pazienti/"+id+"");
+    return this.http.get<any>("http://152.70.169.171:5000/api/pazienti/"+id+"");
   }
 
 
