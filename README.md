@@ -48,7 +48,7 @@ cd wot-project-FrontEnd-SimoneNorberti
 ng serve --host 0.0.0.0
 ```
 ____________________________________________________________________________________________________________
-## SarcopeniaFrontEnd
+## Altri comandi utili per Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
